@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/orm_2_2.xsd"
+	version="2.2">
+
+	<named-query name="Cidade.contem">
+		<query>
+			select c from Cidade c where c.nome like concat('%', :nome, '%') order by c.nome asc
+		</query>
+	</named-query>
+	
+	<named-query name="Cidade.pesquisarPor">
+		<query>
+			select c from Cidade c where c.nome = :nome
+		</query>
+	</named-query>
+	
+	<named-query name="Cidade.pesquisarTodos">
+		<query>
+			select c from Cidade c order by c.nome
+		</query>
+	</named-query>
+
+	<named-query name="Restaurante.contem">
+		<query>
+			select r from Restaurante r where r.nome like concat('%', :nome, '%') order by r.nome asc
+		</query>
+	</named-query>
+	
+	<named-query name="Restaurante.pesquisarPor">
+		<query>
+			select r from Restaurante r where r.nome = :nome
+		</query>
+	</named-query>
+	
+	<named-query name="Restaurante.pesquisarTodos">
+		<query>
+			select DISTINCT(r) from Restaurante r left outer join r.servicoEntregas left join fetch r.endereco.cidade order by r.nome
+		</query>
+	</named-query>
+
+	<named-query name="ServicoEntrega.contem">
+		<query>
+			select se from ServicoEntrega se where se.nome like concat('%', :nome, '%') order by se.nome asc
+		</query>
+	</named-query>
+	
+	<named-query name="ServicoEntrega.pesquisarPor">
+		<query>
+			select se from ServicoEntrega se where se.nome = :nome
+		</query>
+	</named-query>
+	<named-query name="ServicoEntrega.pesquisarTodos">
+		<query>
+			select se from ServicoEntrega se order by se.nome
+		</query>
+	</named-query>
+</entity-mappings>

@@ -1,0 +1,14 @@
+{
+	"nome": "Coco Bambum",
+	"descricao": "Comida Caseira",
+	"endereco": {
+		"logradouro": null,
+		"numero": "1000",
+		"bairro": "Centro",
+		"cep": "38400-999",
+		"complemento": "Próximo a praia",
+		"cidade": {
+			"codigo": 1
+		}
+	}
+}

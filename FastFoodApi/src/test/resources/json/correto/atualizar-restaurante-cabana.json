@@ -1,0 +1,14 @@
+{
+	"nome": "Cabana do Sol",
+	"descricao": "Comida Contemporânea",
+	"endereco": {
+		"logradouro": "Rua João Pinheiro",
+		"numero": "10010",
+		"bairro": "Centro",
+		"cep": "38400-999",
+		"complemento": "Próximo a praia",
+		"cidade": {
+			"codigo": 1
+		}
+	} 
+}
