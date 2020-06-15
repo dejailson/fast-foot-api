@@ -4,6 +4,7 @@
 package br.ifma.ita.fastfood.domain.db.modelo;
 
 import java.beans.Transient;
+import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
@@ -30,8 +31,12 @@ import lombok.ToString;
 @ToString
 @NoArgsConstructor
 @MappedSuperclass
-public abstract class EntidadeBase {
+public abstract class EntidadeBase implements Serializable{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id", nullable = false)

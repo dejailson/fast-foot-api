@@ -14,8 +14,8 @@ import br.ifma.ita.fastfood.core.excecao.RestauranteNaoEncontradoExcecao;
 import br.ifma.ita.fastfood.domain.db.dao.RestauranteDao;
 import br.ifma.ita.fastfood.domain.db.modelo.Endereco;
 import br.ifma.ita.fastfood.domain.db.modelo.Restaurante;
-import br.ifma.ita.fastfood.domain.especificacao.RestauranteEspec;
 import br.ifma.ita.fastfood.domain.repositorio.filtro.RestauranteFiltro;
+import br.ifma.ita.fastfood.infraestrutura.especificacao.RestauranteEspec;
 
 /**
  * @author dejailson

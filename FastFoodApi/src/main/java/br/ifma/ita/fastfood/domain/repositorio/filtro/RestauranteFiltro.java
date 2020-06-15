@@ -3,6 +3,7 @@
  */
 package br.ifma.ita.fastfood.domain.repositorio.filtro;
 
+import br.ifma.ita.fastfood.domain.repositorio.SituacaoRestaurante;
 import lombok.Getter;
 import lombok.Setter;
 

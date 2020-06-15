@@ -3,6 +3,8 @@
  */
 package br.ifma.ita.fastfood.domain.db.modelo;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import javax.persistence.FetchType;
@@ -23,7 +25,12 @@ import lombok.Setter;
 @Getter
 @Setter
 @Embeddable
-public class Endereco {
+public class Endereco implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	@Column(name = "logradouro", columnDefinition = "varchar(150)", nullable = false, length = 150)
 	private String logradouro;

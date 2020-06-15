@@ -9,7 +9,6 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.repository.NoRepositoryBean;
 
 import br.ifma.ita.fastfood.domain.db.modelo.EntidadeBase;
-import br.ifma.ita.fastfood.domain.infraestrutura.JpaRepositorioCustomizado;
 
 /**
  * @author dejailson

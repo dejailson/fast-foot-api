@@ -23,11 +23,11 @@ import lombok.Setter;
 @JsonInclude(value = Include.NON_NULL)
 public class RestauranteModelo{
 	
-	@JsonView(VisualizacaoJson.Resumo.class)
+	@JsonView({VisualizacaoJson.Resumo.class, VisualizacaoJson.ProdutoCompleto.class})
 	@JsonProperty(value = "codigo", index = 1)
 	private Long id;
 	
-	@JsonView(VisualizacaoJson.Resumo.class)
+	@JsonView({VisualizacaoJson.Resumo.class, VisualizacaoJson.ProdutoCompleto.class})
 	private String nome;
 	@JsonView(VisualizacaoJson.Resumo.class)
 	private String descricao;

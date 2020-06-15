@@ -1,7 +1,7 @@
 /**
  * 
  */
-package br.ifma.ita.fastfood.domain.infraestrutura;
+package br.ifma.ita.fastfood.domain.db.dao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.NoRepositoryBean;

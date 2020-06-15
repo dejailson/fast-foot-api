@@ -14,5 +14,6 @@ import br.ifma.ita.fastfood.domain.db.modelo.Restaurante;
 @Component
 public interface RestauranteDao extends BaseDao<Restaurante>, IConsultaJpa<Restaurante> {
 	
+	
 
 }

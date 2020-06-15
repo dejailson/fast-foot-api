@@ -52,9 +52,34 @@
 			select se from ServicoEntrega se where se.nome = :nome
 		</query>
 	</named-query>
+	
 	<named-query name="ServicoEntrega.pesquisarTodos">
 		<query>
 			select se from ServicoEntrega se order by se.nome
+		</query>
+	</named-query>
+	
+	<named-query name="Produto.pesquisarTodos">
+		<query>
+			select p from Produto p left join p.restaurante order by p.nome
+		</query>
+	</named-query>
+	
+	<named-query name="Produto.contarPor">
+		<query>
+			select count(p) from Produto p where p.sku = :sku
+		</query>
+	</named-query>
+	
+	<named-query name="Produto.pesquisarProdutoPor">
+		<query>
+			select p from Produto p where p.sku = :sku and p.restaurante = :restaurante
+		</query>
+	</named-query>
+	
+	<named-query name="Produto.pesquisarProdutosPor">
+		<query>
+			select p from Produto p where p.restaurante = :restaurante
 		</query>
 	</named-query>
 </entity-mappings>

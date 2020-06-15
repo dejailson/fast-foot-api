@@ -60,6 +60,14 @@ public class CidadeControlador {
 		
 		return empacotador.empacotar(lista);
 	}
+	
+	@GetMapping("/{codigo}")
+	@ResponseStatus(code = HttpStatus.OK)
+	public CidadeModelo pesquisar(@PathVariable("codigo") Long codigo) {
+		var cidade = repositorio.pesquisarPor(codigo);
+		
+		return empacotador.empacotar(cidade);
+	}
 
 	@PostMapping
 	@ResponseStatus(code = HttpStatus.CREATED)

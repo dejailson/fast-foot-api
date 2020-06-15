@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-import br.ifma.ita.fastfood.domain.infraestrutura.JpaRepositorioCustomizadoImpl;
+import br.ifma.ita.fastfood.infraestrutura.repositorio.JpaRepositorioCustomizadoImpl;
 
 //https://github.com/brunokarpo/spring-boot-com-TDD
 @SpringBootApplication

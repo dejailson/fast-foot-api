@@ -3,12 +3,11 @@
  */
 package br.ifma.ita.fastfood.domain.servico.suporte;
 
-import javax.transaction.Transactional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import br.ifma.ita.fastfood.core.excecao.CampoDuplicadoExcecao;
 import br.ifma.ita.fastfood.core.excecao.EntidadeEmUsoException;

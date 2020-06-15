@@ -57,6 +57,13 @@ public class ServicoEntregaControlador {
 		var lista = repositorio.listarTodos();
 		return empacotador.empacotar(lista);
 	}
+	
+	@GetMapping("/{codigo}")
+	@ResponseStatus(code = HttpStatus.OK)
+	public ServicoEntregaModelo pesquisar(@PathVariable("codigo") Long codigo) {
+		var se = repositorio.pesquisarPor(codigo);
+		return empacotador.empacotar(se);
+	}
 
 	@PostMapping
 	@ResponseStatus(code = HttpStatus.CREATED)

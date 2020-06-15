@@ -1,7 +1,7 @@
 /**
  * 
  */
-package br.ifma.ita.fastfood.domain.repositorio.filtro;
+package br.ifma.ita.fastfood.domain.repositorio;
 
 /**
  * @author dejailson
