@@ -27,9 +27,9 @@ import br.ifma.ita.fastfood.core.excecao.CampoDuplicadoExcecao;
 import br.ifma.ita.fastfood.core.excecao.CidadeNaoEncontradaExcecao;
 import br.ifma.ita.fastfood.core.excecao.EntidadeEmUsoException;
 import br.ifma.ita.fastfood.core.excecao.NegocioExcecao;
-import br.ifma.ita.fastfood.domain.repositorio.RestauranteRepositorio;
-import br.ifma.ita.fastfood.domain.repositorio.filtro.RestauranteFiltro;
-import br.ifma.ita.fastfood.domain.servico.IRestauranteServico;
+import br.ifma.ita.fastfood.dominio.repositorio.RestauranteRepositorio;
+import br.ifma.ita.fastfood.dominio.repositorio.filtro.RestauranteFiltro;
+import br.ifma.ita.fastfood.dominio.servico.IRestauranteServico;
 
 /**
  * @author dejailson

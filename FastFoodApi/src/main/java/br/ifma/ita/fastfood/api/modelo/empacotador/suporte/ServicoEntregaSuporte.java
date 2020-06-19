@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import br.ifma.ita.fastfood.api.modelo.empacotador.IServicoEntregaEmpacotador;
 import br.ifma.ita.fastfood.api.modelo.entrada.ServicoEntregaModeloIn;
 import br.ifma.ita.fastfood.api.modelo.saida.ServicoEntregaModelo;
-import br.ifma.ita.fastfood.domain.db.modelo.ServicoEntrega;
+import br.ifma.ita.fastfood.dominio.db.modelo.ServicoEntrega;
 
 /**
  * @author dejailson

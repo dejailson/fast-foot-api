@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import br.ifma.ita.fastfood.api.modelo.empacotador.ICidadeEmpacotador;
 import br.ifma.ita.fastfood.api.modelo.entrada.CidadeModeloIn;
 import br.ifma.ita.fastfood.api.modelo.saida.CidadeModelo;
-import br.ifma.ita.fastfood.domain.db.modelo.Cidade;
+import br.ifma.ita.fastfood.dominio.db.modelo.Cidade;
 
 /**
  * @author dejailson

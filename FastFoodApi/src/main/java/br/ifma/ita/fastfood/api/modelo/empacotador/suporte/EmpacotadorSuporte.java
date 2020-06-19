@@ -11,7 +11,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import br.ifma.ita.fastfood.api.modelo.empacotador.IEmpacotador;
-import br.ifma.ita.fastfood.domain.db.modelo.EntidadeBase;
+import br.ifma.ita.fastfood.dominio.db.modelo.EntidadeBase;
 
 /**
  * @author dejailson

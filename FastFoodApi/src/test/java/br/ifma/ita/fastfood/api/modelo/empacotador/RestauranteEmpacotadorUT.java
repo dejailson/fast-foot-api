@@ -19,12 +19,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import br.ifma.ita.fastfood.api.modelo.entrada.RestauranteModeloIn;
 import br.ifma.ita.fastfood.api.modelo.id.InCidadeId;
-import br.ifma.ita.fastfood.domain.db.dao.RestauranteDao;
-import br.ifma.ita.fastfood.domain.db.modelo.Cidade;
-import br.ifma.ita.fastfood.domain.db.modelo.Endereco;
-import br.ifma.ita.fastfood.domain.db.modelo.Restaurante;
-import br.ifma.ita.fastfood.domain.db.modelo.ServicoEntrega;
-import br.ifma.ita.fastfood.domain.repositorio.RestauranteRepositorio;
+import br.ifma.ita.fastfood.dominio.db.dao.RestauranteDao;
+import br.ifma.ita.fastfood.dominio.db.modelo.Cidade;
+import br.ifma.ita.fastfood.dominio.db.modelo.Endereco;
+import br.ifma.ita.fastfood.dominio.db.modelo.Restaurante;
+import br.ifma.ita.fastfood.dominio.db.modelo.ServicoEntrega;
+import br.ifma.ita.fastfood.dominio.repositorio.RestauranteRepositorio;
 
 /**
  * @author dejailson

@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 
 import br.ifma.ita.fastfood.api.modelo.saida.CidadeModelo;
 import br.ifma.ita.fastfood.api.modelo.saida.RestauranteModelo;
-import br.ifma.ita.fastfood.domain.db.modelo.Restaurante;
+import br.ifma.ita.fastfood.dominio.db.modelo.Restaurante;
 
 /**
  * @author dejailson

@@ -24,11 +24,11 @@ import br.ifma.ita.fastfood.api.modelo.saida.ServicoEntregaModelo;
 import br.ifma.ita.fastfood.core.excecao.CampoDuplicadoExcecao;
 import br.ifma.ita.fastfood.core.excecao.EntidadeEmUsoException;
 import br.ifma.ita.fastfood.core.excecao.NegocioExcecao;
-import br.ifma.ita.fastfood.domain.db.modelo.ServicoEntrega;
-import br.ifma.ita.fastfood.domain.repositorio.ServicoEntregaRepositorio;
-import br.ifma.ita.fastfood.domain.servico.IServico;
-import br.ifma.ita.fastfood.domain.servico.QualificadorDoServico;
-import br.ifma.ita.fastfood.domain.servico.TipoDoServico;
+import br.ifma.ita.fastfood.dominio.db.modelo.ServicoEntrega;
+import br.ifma.ita.fastfood.dominio.repositorio.ServicoEntregaRepositorio;
+import br.ifma.ita.fastfood.dominio.servico.IServico;
+import br.ifma.ita.fastfood.dominio.servico.QualificadorDoServico;
+import br.ifma.ita.fastfood.dominio.servico.TipoDoServico;
 
 /**
  * @author dejailson

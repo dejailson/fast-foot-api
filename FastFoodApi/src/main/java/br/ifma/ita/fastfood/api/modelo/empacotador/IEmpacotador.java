@@ -6,7 +6,7 @@ package br.ifma.ita.fastfood.api.modelo.empacotador;
 import java.util.Collection;
 import java.util.List;
 
-import br.ifma.ita.fastfood.domain.db.modelo.EntidadeBase;
+import br.ifma.ita.fastfood.dominio.db.modelo.EntidadeBase;
 
 /**
  * @author dejailson

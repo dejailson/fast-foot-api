@@ -19,8 +19,8 @@ import br.ifma.ita.fastfood.api.modelo.empacotador.IServicoEntregaEmpacotador;
 import br.ifma.ita.fastfood.api.modelo.saida.ServicoEntregaModelo;
 import br.ifma.ita.fastfood.core.excecao.NegocioExcecao;
 import br.ifma.ita.fastfood.core.excecao.ServicoEntregaNaoEncontradoExcecao;
-import br.ifma.ita.fastfood.domain.repositorio.ServicoEntregaRepositorio;
-import br.ifma.ita.fastfood.domain.servico.IRestauranteServico;
+import br.ifma.ita.fastfood.dominio.repositorio.ServicoEntregaRepositorio;
+import br.ifma.ita.fastfood.dominio.servico.IRestauranteServico;
 
 /**
  * @author dejailson
