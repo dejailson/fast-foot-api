@@ -9,12 +9,14 @@ package br.ifma.ita.fastfood.api.modelo.visualizacao;
  */
 public interface VisualizacaoJson {
 	
-	public interface Resumo{}
 	
-	public interface Completo extends Resumo{}
+	public interface Imagem{}
 	
 	public interface ProdutoResumo{}
 	
 	public interface ProdutoCompleto extends ProdutoResumo{};
 
+	public interface Completo extends Resumo{}
+
+	public interface Resumo{}
 }

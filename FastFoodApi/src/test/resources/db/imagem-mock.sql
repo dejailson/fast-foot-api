@@ -1,0 +1,3 @@
+insert into imagem (descricao, nome, tipo_conteudo, produto_id) values ("Bife a milanesa", "c68730c5-6318-4a6c-9005-603231b60daa_anime.jpeg", "image/jpeg", (select p.id from produto p where p.sku = "PTPPEIXCHEI15"));
+insert into imagem (descricao, nome, tipo_conteudo, produto_id) values ("Grande Cachorro Quente", "Big_Hot_Dog.jpg", "image/jpeg", (select p.id from produto p where p.sku = "PTPATUMCABA10"));
+insert into imagem (descricao, nome, tipo_conteudo, produto_id) values ("Salada Vegetariana", "Salada_Vegetariana.jpg", "image/jpeg", (select p.id from produto p where p.sku = "ENTSALACABA15"));

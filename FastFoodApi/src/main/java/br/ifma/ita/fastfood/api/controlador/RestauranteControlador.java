@@ -53,11 +53,11 @@ public class RestauranteControlador {
 	
 	@GetMapping()
 	@ResponseStatus(code = HttpStatus.OK)
-	public MappingJacksonValue pesquisar(@RequestParam(name = "completo", required = false) boolean completo,
+	public MappingJacksonValue pesquisar(@RequestParam(name = "completo", required = false,defaultValue = "false") boolean completo,
 			RestauranteFiltro filtro){
-		var lista = repositorio.pesquisarTodos(filtro);
+		var restaurantes = repositorio.pesquisarTodos(filtro);
 		
-		MappingJacksonValue resturanteView = new MappingJacksonValue(empacotador.empacotar(lista));
+		MappingJacksonValue resturanteView = new MappingJacksonValue(empacotador.empacotar(restaurantes));
 		
 		resturanteView.setSerializationView(VisualizacaoJson.Resumo.class);
 		

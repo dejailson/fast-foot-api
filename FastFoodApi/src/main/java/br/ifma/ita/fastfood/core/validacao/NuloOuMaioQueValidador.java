@@ -19,8 +19,6 @@ public class NuloOuMaioQueValidador implements ConstraintValidator<NuloOuMaiorQu
 		valor = constraintAnnotation.valor();
 	}
 
-
-
 	@Override
 	public boolean isValid(Number value, ConstraintValidatorContext context) {
 		var valido = true;

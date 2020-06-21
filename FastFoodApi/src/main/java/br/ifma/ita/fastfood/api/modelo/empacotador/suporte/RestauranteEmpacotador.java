@@ -17,10 +17,10 @@ import br.ifma.ita.fastfood.dominio.db.modelo.Restaurante;
  *
  */
 @Component
-public class RestauranteSuporte extends EmpacotadorSuporte<RestauranteModeloIn, RestauranteModelo, Restaurante>
+public class RestauranteEmpacotador extends EmpacotadorSuporte<RestauranteModeloIn, RestauranteModelo, Restaurante>
 implements IRestauranteEmpacotador{
 
-	public RestauranteSuporte() {
+	public RestauranteEmpacotador() {
 		super(RestauranteModelo.class, Restaurante.class);
 	}
 

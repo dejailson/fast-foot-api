@@ -1,7 +1,7 @@
 /**
  * 
  */
-package br.ifma.ita.fastfood.infraestrutura.armazenamento;
+package br.ifma.ita.fastfood.core.armazenamento.infraestrutura;
 
 import java.io.IOException;
 import java.nio.file.CopyOption;

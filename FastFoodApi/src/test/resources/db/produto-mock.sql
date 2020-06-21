@@ -1,0 +1,3 @@
+insert into produto(nome,descricao,peso,preco_unitario,tipo,sku,restaurante_id) values("Peixada da Vovó", "Pescada amarela no leite de coco",300,150.00,"PRATO_PRINCIPAL","PTPPEIXCHEI15", (select r.id from restaurante r where r.nome="Cheiro Verde"))
+insert into produto(nome,descricao,peso,preco_unitario,tipo,sku,restaurante_id) values("Atum madeirado", "Atum marinado no molho de madeira",200,100.00,"PRATO_PRINCIPAL","PTPATUMCABA10", (select r.id from restaurante r where r.nome="Cabana do Sol"))
+insert into produto(nome,descricao,peso,preco_unitario,tipo,sku,restaurante_id) values("Salada Vegetariana", "Mix de Vegetais regados com azeite",200,150.00,"ENTRADA","ENTSALACABA15", (select r.id from restaurante r where r.nome="Cabana do Sol"))

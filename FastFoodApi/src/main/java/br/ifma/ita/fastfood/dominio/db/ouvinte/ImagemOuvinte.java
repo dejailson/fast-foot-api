@@ -12,7 +12,7 @@ import javax.persistence.PreUpdate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 
-import br.ifma.ita.fastfood.core.armazenamento.ArmazenamentoRemoverEvento;
+import br.ifma.ita.fastfood.core.armazenamento.evento.ArmazenamentoRemoverEvento;
 import br.ifma.ita.fastfood.dominio.db.modelo.Imagem;
 
 

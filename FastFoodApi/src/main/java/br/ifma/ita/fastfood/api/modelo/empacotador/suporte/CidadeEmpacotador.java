@@ -15,12 +15,10 @@ import br.ifma.ita.fastfood.dominio.db.modelo.Cidade;
  *
  */
 @Component
-public class CidadeSuporte extends EmpacotadorSuporte<CidadeModeloIn, CidadeModelo, Cidade>
+public class CidadeEmpacotador extends EmpacotadorSuporte<CidadeModeloIn, CidadeModelo, Cidade>
 implements ICidadeEmpacotador{
 
-	public CidadeSuporte() {
+	public CidadeEmpacotador() {
 		super(CidadeModelo.class, Cidade.class);
 	}
-	
-
 }

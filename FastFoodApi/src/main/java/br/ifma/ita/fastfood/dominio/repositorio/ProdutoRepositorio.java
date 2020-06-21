@@ -5,7 +5,7 @@ package br.ifma.ita.fastfood.dominio.repositorio;
 
 import java.util.List;
 
-import org.springframework.lang.Nullable;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import br.ifma.ita.fastfood.core.excecao.ProdutoNaoEncontradoExcecao;
@@ -24,11 +24,12 @@ public class ProdutoRepositorio {
 	
 	private ProdutoDao dao;
 
+	@Autowired
 	public ProdutoRepositorio(ProdutoDao dao) {
 		this.dao = dao;
 	}
 	
-	public List<Produto> pesquisarPor(Restaurante restaurante, @Nullable ProdutoFiltro filtro) {
+	public List<Produto> pesquisarPor(Restaurante restaurante, ProdutoFiltro filtro) {
 		if (filtro.temParametro()) {
 			var spec = new ProdutoEspec.Construtor(filtro)
 					.nome()

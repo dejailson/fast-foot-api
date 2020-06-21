@@ -67,7 +67,7 @@
 	
 	<named-query name="Produto.contarPor">
 		<query>
-			select count(p) from Produto p where p.sku = :sku
+			select count(p) from Produto p where p.sku like concat(:sku, '%')
 		</query>
 	</named-query>
 	

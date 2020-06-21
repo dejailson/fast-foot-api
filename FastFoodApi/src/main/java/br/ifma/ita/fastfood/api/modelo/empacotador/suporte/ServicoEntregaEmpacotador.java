@@ -15,10 +15,10 @@ import br.ifma.ita.fastfood.dominio.db.modelo.ServicoEntrega;
  *
  */
 @Component
-public class ServicoEntregaSuporte extends EmpacotadorSuporte<ServicoEntregaModeloIn, ServicoEntregaModelo, ServicoEntrega>
+public class ServicoEntregaEmpacotador extends EmpacotadorSuporte<ServicoEntregaModeloIn, ServicoEntregaModelo, ServicoEntrega>
 implements IServicoEntregaEmpacotador{
 	
-	public ServicoEntregaSuporte() {
+	public ServicoEntregaEmpacotador() {
 		super(ServicoEntregaModelo.class, ServicoEntrega.class);
 	}
 }

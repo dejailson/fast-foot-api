@@ -12,8 +12,8 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 
 import br.ifma.ita.fastfood.core.armazenamento.Armazenamento;
-import br.ifma.ita.fastfood.core.armazenamento.ArmazenamentoAdicionarEvento;
-import br.ifma.ita.fastfood.core.armazenamento.ArmazenamentoSubstituirEvento;
+import br.ifma.ita.fastfood.core.armazenamento.evento.ArmazenamentoAdicionarEvento;
+import br.ifma.ita.fastfood.core.armazenamento.evento.ArmazenamentoSubstituirEvento;
 import br.ifma.ita.fastfood.core.excecao.ProdutoImagemNaoEncontradoExcecao;
 import br.ifma.ita.fastfood.dominio.db.dao.ProdutoDao;
 import br.ifma.ita.fastfood.dominio.db.modelo.Imagem;
@@ -71,8 +71,6 @@ public class ProdutoImagemServico implements IProdutoImagemServico {
 
 		dao.excluirImagem(imagem);
 		dao.flush();
-
-		//this.eventPublisher.publishEvent(new ArmazenamentoRemoverEvento(imagem.getNome()));
 	}
 
 	private void salvarOuAtualizarImagem(Imagem imagem, InputStream stream, String nomeAnterior) {
@@ -85,8 +83,11 @@ public class ProdutoImagemServico implements IProdutoImagemServico {
 	}
 
 	private Armazenamento.Arquivo getNovoArquivo(InputStream stream, Imagem imagemPersistida) {
-		return Armazenamento.Arquivo.builder().tipoConteudo(imagemPersistida.getTipoConteudo())
-				.nomeArquivo(imagemPersistida.getNome()).inputStream(stream).build();
+		return Armazenamento.Arquivo.builder()
+				.tipoConteudo(imagemPersistida.getTipoConteudo())
+				.nomeArquivo(imagemPersistida.getNome())
+				.inputStream(stream)
+				.build();
 	}
 
 }

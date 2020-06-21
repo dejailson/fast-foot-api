@@ -1,8 +1,9 @@
 /**
  * 
  */
-package br.ifma.ita.fastfood.core.armazenamento;
+package br.ifma.ita.fastfood.core.armazenamento.evento;
 
+import br.ifma.ita.fastfood.core.armazenamento.Armazenamento;
 import br.ifma.ita.fastfood.core.armazenamento.Armazenamento.Arquivo;
 import lombok.Getter;
 

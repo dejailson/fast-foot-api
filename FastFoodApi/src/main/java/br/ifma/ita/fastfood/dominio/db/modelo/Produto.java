@@ -10,6 +10,8 @@ import java.math.BigDecimal;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.ForeignKey;
 import javax.persistence.JoinColumn;
@@ -52,6 +54,10 @@ public class Produto extends EntidadeBase {
 	private String descricao;
 	@Column(name = "sku", nullable = false,columnDefinition = "varchar(255)",unique = true)
 	private String sku;
+	
+	@Enumerated(EnumType.STRING)
+	@Column(name = "tipo", nullable = false)
+	private TipoProduto tipo;
 	
 	@Column(name = "peso", nullable = false)
 	private Long peso;

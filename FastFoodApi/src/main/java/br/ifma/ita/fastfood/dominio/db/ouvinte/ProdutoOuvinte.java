@@ -21,9 +21,6 @@ public class ProdutoOuvinte {
 	
 	private ProdutoDao dao;
 
-	
-	private final String SKU_PREFIXO = "FD";
-
 	@Autowired
 	public ProdutoOuvinte(@Lazy ProdutoDao dao) {
 		this.dao = dao;
@@ -35,7 +32,10 @@ public class ProdutoOuvinte {
 		var prefixoProduto = produto.getPrefixoNome();
 		var valor= produto.getPrecoUnitario().toBigInteger();
 		
-		var novoSKU = SKU_PREFIXO.concat(prefixoProduto).concat(prefixoRestaurante).concat(valor.toString());
+		var novoSKU = produto.getTipo().getPrefixo()
+				.concat(prefixoProduto)
+				.concat(prefixoRestaurante)
+				.concat(valor.toString());
 		var contador = dao.contarPor(novoSKU);
 		novoSKU = contador>0?novoSKU.concat(contador.toString()):novoSKU;
 		
